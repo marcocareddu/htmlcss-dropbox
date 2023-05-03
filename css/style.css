@@ -26,12 +26,12 @@
 
 .container-large {
     max-width: 1200px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .container-small {
     max-width: 1000px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 /* !DA RIMUOVERE */
@@ -88,11 +88,11 @@ main {
 .picture {
     background-color: #fff;
     height: 200px;
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 
 .col {
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 /* COLUMN MONTH PLAN */
@@ -110,4 +110,16 @@ main {
 
 .col-plan .single.col {
     width: calc(100% / 3);
+}
+
+/* ENTERPRISE SECTION */
+.enterprise {
+    height: 300px;
+    background-color: lightslategray;
+}
+
+/* PARTNER SECTION */
+.partner {
+    height: 600px;
+    background-color: lightgreen;
 }
