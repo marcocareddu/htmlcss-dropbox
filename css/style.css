@@ -1,0 +1,46 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+    --btn-color: #0061ff;
+    --bgc-main-color: #b4d0e7;
+    --border-color: #d0d0d3;
+    --txt-size-xl: ;
+    --txt-size-md: ;
+    --txt-size-sm: ;
+}
+
+/* UTILITY */
+.dflex {
+    display: flex;
+}
+
+.container-large {
+    max-width: 1200px;
+    margin: 0, auto;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0, auto;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 5px;
+}
+
+.btn .btn-blue {
+    color: #fff;
+    background-color: var(--btn-color);
+}
+
+/* BODY */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
