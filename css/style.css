@@ -10,9 +10,9 @@
     --btn-color: #0061ff;
     --bgc-main-color: #b4d0e7;
     --border-color: #d0d0d3;
-    --txt-size-xl: ;
+    /* --txt-size-xl: ;
     --txt-size-md: ;
-    --txt-size-sm: ;
+    --txt-size-sm: ; */
 }
 
 /* UTILITY */
@@ -68,6 +68,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 /* MAIN */
@@ -108,7 +109,7 @@ main {
     justify-content: space-between;
 }
 
-.col-plan .single.col {
+.col-plan .single-col {
     width: calc(100% / 3);
 }
 
@@ -122,4 +123,87 @@ main {
 .partner {
     height: 600px;
     background-color: lightgreen;
+}
+
+/* BUSINESS SECTION */
+.business {
+    flex-wrap: wrap;
+} 
+
+.col-business {
+    width: calc(100% / 3);
+}
+
+.debug-img {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+/* DESIGNIT MEGABLOCK SECTION */
+.megablock {
+    height: 500px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+}
+
+.designit {
+    background-color: lightgreen;
+}
+
+.asu {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    background-color: rebeccapurple;
+}
+
+.uni-florida {
+    background-color: cyan;
+}
+
+.topps {
+    background-color: red;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.wbr {
+    position: absolute;
+    right: 250px;
+    top: 0;
+    background-color: red;
+}
+
+.hearst {
+    background-color: aquamarine;
+}
+
+.lonely-planet {
+    position: absolute;
+    right: 250px;
+    bottom: 0px;
+    background-color: blue;
+}
+
+.clear-channel {
+    background-color: yellow;
+}
+
+/* COMPANY SECTION */
+.company {
+    height: 300px;
+    background-color: var(--bgc-main-color);
+}
+
+/* FAQ */
+.faq {
+    height: 800px;
+    background-color: lightsalmon;
 }
