@@ -207,3 +207,15 @@ main {
     height: 800px;
     background-color: lightsalmon;
 }
+
+/* FOOTER */
+footer {
+    color: white;
+    height: 600px;
+    background-color: black;
+}
+
+.foot-column {
+    border: 2px solid white;
+    flex-basis: calc(100% / 5);
+}
