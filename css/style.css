@@ -16,8 +16,12 @@
 }
 
 /* UTILITY */
-.dflex {
+.d-flex {
     display: flex;
+}
+
+.just-cent {
+    justify-content: center;
 }
 
 .container-large {
@@ -28,6 +32,15 @@
 .container-small {
     max-width: 1000px;
     margin: 0, auto;
+}
+
+/* !DA RIMUOVERE */
+.border {
+    border: 1px solid black;
+}
+
+.bgc-white {
+    background-color: #fff;
 }
 
 /* BUTTONS */
@@ -43,4 +56,58 @@
 /* BODY */
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background-color: yellow;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MAIN */
+main {
+    margin-top: 80px;
+}
+
+/* JUMBOTRON */
+.jumbo-box {
+    background-color: var(--bgc-main-color);
+    height: 700px;
+}
+
+.jumbotron h1 {
+    background-color: #fff;
+}
+
+.picture {
+    background-color: #fff;
+    height: 200px;
+    flex-basis: 60%;
+}
+
+.col {
+    flex-basis: 40%;
+}
+
+/* COLUMN MONTH PLAN */
+.plan-box {
+    height: 1000px;
+}
+
+.month-plan {
+    background-color: pink;
+}
+
+.col-plan {
+    justify-content: space-between;
+}
+
+.col-plan .single.col {
+    width: calc(100% / 3);
 }
