@@ -211,6 +211,10 @@ div.col > .btn {
     width: calc(100% / 3);
 }
 
+.single-col * {
+    padding-top: 10px;
+}
+
 /* CIRCLE */
 .circle {
     display: inline-block;
