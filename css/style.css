@@ -78,15 +78,15 @@ p {
     color: var(--btn-color);
 }
 
+.border {
+    border: 1px solid var(--border-color);
+}
+
 .center {
     text-align: center;
 }
 
 /* !DA RIMUOVERE */
-.border {
-    border: 1px solid var(--border-color);
-}
-
 .bgc-white {
     background-color: #fff;
 }
@@ -379,7 +379,7 @@ div.col > .btn {
 }
 
 .company-box h2 {
-    padding: 0px 60px;
+    padding-right: 60px;
     flex-basis: 70%;
     color: var(--asu-color);
 }
@@ -392,7 +392,21 @@ div.col > .btn {
 /* FAQ */
 .faq {
     height: 800px;
-    background-color: lightsalmon;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.faq-box h4 {
+    padding: 50px 0px;
+}
+
+.faq-box div:last-child {
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* FOOTER */
@@ -406,6 +420,3 @@ footer {
     border: 2px solid white;
     flex-basis: calc(100% / 5);
 }
-
-
-
