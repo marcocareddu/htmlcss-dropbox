@@ -103,15 +103,20 @@ button {
 .btn.btn-blue {
     color: #fff;
     background-color: var(--btn-color);
+    text-decoration: none;
+
 }
 
 .btn.btn-white {
     color: black;
     background-color: white;
+    text-decoration: none;
+
 }
 
 #find-btn {
     border: 1px solid black;
+    text-decoration: none;
 }
 
 /* BODY */
@@ -133,7 +138,11 @@ header {
     box-shadow: 1px 1px 5px grey;
 }
 
-a {
+.logo {
+    margin-left: 15px;
+}
+
+li a {
     text-decoration: none;
     color: currentColor;
 }
@@ -141,6 +150,10 @@ a {
 ul li {
     list-style-type: none;
     padding: 0px 15px;
+}
+
+header .btn-blue {
+    margin-right: 15px;
 }
 
 .menu-rx ul {
@@ -215,6 +228,11 @@ div.col > .btn {
     padding-top: 10px;
 }
 
+.span-border {
+    border-bottom: 1px solid var(--border-color);
+    padding: 25px 0px;
+}
+
 /* CIRCLE */
 .circle {
     display: inline-block;
@@ -268,6 +286,10 @@ div.col > .btn {
     flex-basis: 80%;
 }
 
+.enterprise-info * {
+    padding: 10px 0px;
+}
+
 .enterprise-btn {
     flex-basis: 20%;
     padding-top: 30px;
@@ -284,6 +306,14 @@ div.col > .btn {
     column-gap: 20px;
     justify-content: space-between;
 } 
+
+.business-row {
+    padding: 50px 0px;
+}
+
+.business-row h2 {
+    padding: 50px 0px;
+}
 
 .col-business {
     width: calc((100% / 3) - 40px);
