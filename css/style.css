@@ -12,6 +12,7 @@
     --border-color: #d0d0d3;
     --txt-size-xl: 80px;
     --txt-size-md: 40px;
+    --txt-size-ms: 25px;
     --txt-size-sm: 17px;
     --space-50px: 50px;
 }
@@ -44,6 +45,10 @@ h2 {
     font-size: var(--txt-size-md);
 }
 
+h3 {
+    font-size: var(--txt-size-ms);
+}
+
 p {
     font-size: var(--txt-size-sm);
     line-height: 25px;
@@ -51,6 +56,10 @@ p {
 
 .pad-top-bot-50 {
     padding: var(--space-50px) 0px;
+}
+
+.mar-top-bot-50 {
+    margin: var(--space-50px) 0px;
 }
 
 .fa-check {
@@ -87,6 +96,10 @@ button {
 .btn.btn-white {
     color: black;
     background-color: white;
+}
+
+#find-btn {
+    border: 1px solid black;
 }
 
 /* BODY */
@@ -146,17 +159,21 @@ main {
 }
 
 .picture {
-    background-color: #fff;
-    height: 200px;
+    height: 500px;
     flex-basis: 70%;
+    margin: 0px 30px;
 }
 
 .col {
     flex-basis: 30%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 
-div.col > button {
+div.col > .btn {
     margin: 30px 0px;
+    align-self: start;
 }
 
 .fa-arrow-down {
@@ -168,13 +185,6 @@ div.col > button {
 .plan-box {
     height: 100%;
 }
-
-
-/* .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 
 .col a {
     display: inline-block;
@@ -250,8 +260,7 @@ div.col > button {
 
 /* PARTNER SECTION */
 .partner {
-    height: 600px;
-    background-color: lightgreen;
+    height: 100%;
 }
 
 /* BUSINESS SECTION */
