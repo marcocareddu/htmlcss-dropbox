@@ -135,7 +135,7 @@ header {
 
 a {
     text-decoration: none;
-    color: black;
+    color: currentColor;
 }
 
 ul li {
@@ -391,7 +391,7 @@ div.col > .btn {
 }
 /* FAQ */
 .faq {
-    height: 800px;
+    height: 100%;
 }
 
 .questions {
@@ -402,7 +402,7 @@ div.col > .btn {
 }
 
 .faq-box h4 {
-    padding: 50px 0px;
+    padding: 45px 0px;
 }
 
 .faq-box div:last-child {
@@ -412,11 +412,33 @@ div.col > .btn {
 /* FOOTER */
 footer {
     color: white;
-    height: 600px;
+    height: 400px;
     background-color: black;
+    padding-top: 50px;
 }
 
 .foot-column {
-    border: 2px solid white;
+    line-height: 40px;
+    color: #fff;
     flex-basis: calc(100% / 5);
+}
+
+.foot-column h3 {
+    padding-left: 15px;
+}
+
+.lang-box {
+    height: 80px;
+    align-items: flex-end;
+}
+
+.lang-selection {
+    align-items: center;
+    color: var(--border-color);
+    padding-top: 40px;
+    border-top: 1px solid currentColor;
+}
+
+.lang-selection * {
+    padding-right: 5px;
 }
