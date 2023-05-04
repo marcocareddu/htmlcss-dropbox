@@ -26,6 +26,10 @@
     justify-content: center;
 }
 
+.just-bet {
+    justify-content:space-between;
+}
+
 .container-large {
     max-width: 1200px;
     margin: 0 auto;
@@ -161,11 +165,10 @@ main {
 .picture {
     height: 500px;
     flex-basis: 70%;
-    margin: 0px 30px;
 }
 
 .col {
-    flex-basis: 30%;
+    flex-basis: 35%;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -266,16 +269,23 @@ div.col > .btn {
 /* BUSINESS SECTION */
 .business {
     flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-between;
 } 
 
 .col-business {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 40px);
 }
 
-.debug-img {
-    height: 200px;
-    width: 200px;
-    background-color: red;
+.col-img {
+    height: 250px;
+    width: auto;
+}
+
+.dbox-users {
+    width: 650px;
+    flex-direction: column;
+    padding: 100px 0px;
 }
 
 /* DESIGNIT MEGABLOCK SECTION */
