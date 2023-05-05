@@ -103,6 +103,7 @@ button {
 }
 
 .btn {
+    text-align: center;
     font-size: var(--txt-size-sm);
     padding: 10px 15px;
     display: block;
@@ -278,16 +279,19 @@ div.col > .btn {
 }
 
 .enterprise-info {
-    flex-basis: 80%;
+    flex-basis: 70%;
 }
 
-.enterprise-info * {
-    padding: 10px 0px;
+.enterprise-container {
+    padding: 30px;
+}
+
+.enterprise-info p {
+    padding-top: 50px;
 }
 
 .enterprise-btn {
-    flex-basis: 20%;
-    padding-top: 30px;
+    flex-basis: 30%;
 }
 
 /* PARTNER SECTION */
