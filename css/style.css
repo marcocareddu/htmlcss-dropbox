@@ -118,14 +118,16 @@ ul li {
     color: #fff;
     background-color: var(--btn-color);
     text-decoration: none;
+}
 
+.btn.btn-blue:hover {
+    opacity: 0.5;
 }
 
 .btn.btn-white {
     color: black;
     background-color: white;
     text-decoration: none;
-
 }
 
 #find-btn {
@@ -148,7 +150,6 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
     box-shadow: 1px 1px 5px grey;
 }
 
@@ -416,8 +417,17 @@ div.col-jumbo-txt > .btn {
 .box:hover {
     border: 15px solid rgba(255,255,255,0.6);
 }
+
 .center-blocks {
     padding: var(--space-50px);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.border-designit {
+    margin: 30px 0px;
+    width: 25%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .center-blocks img {
