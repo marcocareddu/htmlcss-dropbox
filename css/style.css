@@ -73,9 +73,9 @@ p {
     line-height: 25px;
 }
 
-/* img {
+img {
     display: block;
-} */
+}
 
 .pad-top-bot-50 {
     padding: var(--space-50px) 0px;
@@ -107,7 +107,7 @@ p {
     text-align: center;
     font-size: var(--txt-size-sm);
     padding: 10px 15px;
-    display: block;
+    /* display: block; */
 }
 
 .btn.btn-blue {
@@ -206,7 +206,7 @@ div.col-jumbo-txt > .btn {
 }
 
 .fa-arrow-down {
-    padding-top: 70px;
+    padding-top: 30px;
     font-size: var(--space-50px);
 }
 
@@ -301,6 +301,19 @@ div.col-jumbo-txt > .btn {
 .partner {
     height: 100%;
 }
+
+.col {
+    margin: var(--space-50px);
+}
+
+.col h3, p {
+    padding: 10px 0px;
+}
+
+.col p {
+    margin-bottom: 30px;
+}
+
 
 /* BUSINESS SECTION */
 .business {
