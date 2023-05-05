@@ -238,13 +238,22 @@ div.col-jumbo-txt > .btn {
 
 .span-border {
     margin-left: 35px;
-    border-bottom: 1px solid var(--border-color);
     padding: 25px 0px;
+}
+
+.border-div {
+    margin: 50px 35px;
+    width: 15%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .plan-ul li {
     text-indent: -9px;
     padding: 5px 49px;
+}
+
+.plan-ul li:last-child {
+    padding-bottom: var(--space-50px);
 }
 
 /* FONT AWESOME LIST ICON */
@@ -421,6 +430,8 @@ div.col-jumbo-txt > .btn {
 
 .box img {
     width: 65%;
+    filter: invert(100%); 
+    -webkit-filter: invert(100%);
 }
 
 .asu {
@@ -501,6 +512,10 @@ footer {
     line-height: 40px;
     color: #fff;
     flex-basis: calc(100% / 5);
+}
+
+.foot-column li:last-child {
+    padding-bottom: 30px;
 }
 
 .lang-box {
