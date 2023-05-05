@@ -21,7 +21,8 @@
     --txt-size-xl: 80px;
     --txt-size-md: 40px;
     --txt-size-ms: 24px;
-    --txt-size-sm: 14px;
+    --txt-size-sm: 16px;
+    --txt-size-xs: 14px;
     --space-50px: 50px;
 }
 
@@ -145,6 +146,10 @@ header {
     box-shadow: 1px 1px 5px grey;
 }
 
+.menu-rx {
+    align-items: center;
+}
+
 .logo {
     margin-left: 15px;
 }
@@ -155,24 +160,13 @@ li a {
 }
 
 ul li {
+    font-size: var(--txt-size-sm);
     list-style-type: none;
     padding: 0px 15px;
 }
 
 header .btn-blue {
     margin-right: 15px;
-}
-
-.menu-rx ul {
-    justify-content: right;
-}
-
-.menu-lx, .menu-rx {
-    flex-basis: 25%;
-}
-
-.empty {
-    flex-basis: 50%;
 }
 
 /* MAIN */
