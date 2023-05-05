@@ -52,6 +52,7 @@
 h1 {
     font-size: var(--txt-size-xl);
     padding: var(--space-50px) 0px;
+    font-weight: 800;
 }
 
 h2 {
@@ -71,6 +72,10 @@ p {
     font-size: var(--txt-size-sm);
     line-height: 25px;
 }
+
+/* img {
+    display: block;
+} */
 
 .pad-top-bot-50 {
     padding: var(--space-50px) 0px;
@@ -98,10 +103,6 @@ p {
 }
 
 /* BUTTONS */
-button {
-    border: none;
-}
-
 .btn {
     text-align: center;
     font-size: var(--txt-size-sm);
@@ -176,13 +177,14 @@ main {
 }
 
 /* JUMBOTRON */
-.jumbo-box {
+.jumbotron {
     background-color: var(--bgc-main-color);
-    height: 700px;
+    height: 720px;
 }
 
 .jumbo-pic {
-    width: 70%;
+    display: block;
+    max-width: 100%;
 }
 
 .picture {
@@ -190,14 +192,15 @@ main {
     flex-basis: 70%;
 }
 
-.col {
-    flex-basis: 35%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
+.col-jumbo-txt {
+    flex-basis: 30%;
 }
 
-div.col > .btn {
+.col-jumbo-img {
+    flex-basis: 70%;
+}
+
+div.col-jumbo-txt > .btn {
     margin: 30px 0px;
     align-self: start;
 }
@@ -212,7 +215,7 @@ div.col > .btn {
     height: 100%;
 }
 
-.col a {
+.col-jumbo-txt a {
     display: inline-block;
     margin: 30px 0px;
 }
