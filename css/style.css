@@ -70,7 +70,6 @@ h4 {
 
 p {
     font-size: var(--txt-size-sm);
-    line-height: 25px;
 }
 
 img {
@@ -100,6 +99,11 @@ img {
 /* !DA RIMUOVERE */
 .bgc-white {
     background-color: #fff;
+}
+
+/* LIST */
+ul li {
+    list-style-type: none;
 }
 
 /* BUTTONS */
@@ -153,7 +157,7 @@ header {
 }
 
 .logo {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 li a {
@@ -161,10 +165,10 @@ li a {
     color: currentColor;
 }
 
-ul li {
+.menu-rx li, .menu-lx li {
     font-size: var(--txt-size-sm);
     list-style-type: none;
-    padding: 0px 15px;
+    padding-left: 40px;
 }
 
 header .btn-blue {
@@ -192,6 +196,11 @@ main {
     flex-basis: 70%;
 }
 
+.col-jumbo-txt a {
+    display: inline-block;
+    margin: 30px 0px;
+}
+
 .col-jumbo-txt {
     flex-basis: 30%;
 }
@@ -206,18 +215,16 @@ div.col-jumbo-txt > .btn {
 }
 
 .fa-arrow-down {
-    padding-top: 30px;
+    padding-top: 45px;
     font-size: var(--space-50px);
 }
 
 /* COLUMN MONTH PLAN */
-.plan-box {
-    height: 100%;
-}
-
-.col-jumbo-txt a {
-    display: inline-block;
-    margin: 30px 0px;
+.month-plan a, 
+.month-plan span, 
+.month-plan li,
+.month-plan p {
+    font-size: var(--txt-size-xs);
 }
 
 .col-plan {
@@ -234,6 +241,41 @@ div.col-jumbo-txt > .btn {
     border-bottom: 1px solid var(--border-color);
     padding: 25px 0px;
 }
+
+.plan-ul li {
+    text-indent: -9px;
+    padding: 5px 49px;
+}
+
+/* FONT AWESOME LIST ICON */
+
+.plan-ul li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.plan-ul li.user-ico::before {
+    font: var(--fa-font-solid);
+    content: "\f007";
+}
+
+.plan-ul li.folder-ico::before {
+    font: var(--fa-font-solid);
+    content: "\f07b";
+}
+
+.plan-ul li.share-ico::before {
+    font: var(--fa-font-solid);
+    content: "\f1e0";
+}
+
+.plan-ul li.check-ico::before {
+    color: var(--btn-color);
+    font: var(--fa-font-solid);
+    content: "\f00c";
+}
+
 
 /* CIRCLE */
 .circle {
@@ -366,9 +408,7 @@ div.col-jumbo-txt > .btn {
     border: 15px solid rgba(255,255,255,0.6);
 }
 .center-blocks {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    padding: var(--space-50px);
 }
 
 .center-blocks img {
@@ -376,7 +416,7 @@ div.col-jumbo-txt > .btn {
 }
 
 .designit {
-    background-color: lightgreen;
+    background-color: var(--designit-color);
 }
 
 .box img {
