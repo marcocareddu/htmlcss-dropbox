@@ -330,23 +330,27 @@ div.col > .btn {
 }
 
 /* DESIGNIT MEGABLOCK SECTION */
-.megablock {
-    height: 520px;
-    justify-content: space-between;
-    position: relative;
+.block {
+    height: calc(100vw / 3);
+    width: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box {
-    height: 260px;
-    width: 260px;
+    width: 50%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 15px solid rgba(0,0,0,0);
 }
 
+.box:hover {
+    border: 15px solid rgba(255,255,255,0.6);
+}
 .center-blocks {
     flex-direction: column;
-    flex-basis: calc(100% / 3);
     align-items: flex-start;
     justify-content: space-around;
 }
@@ -360,14 +364,10 @@ div.col > .btn {
 }
 
 .box img {
-    width: 150px;
-    height: auto;
+    width: 65%;
 }
 
 .asu {
-    position: absolute;
-    top: 0;
-    left: 260px;
     background-color: var(--asu-color);
 }
 
@@ -377,15 +377,9 @@ div.col > .btn {
 
 .topps {
     background-color: var(--topps-color);
-    position: absolute;
-    top: 260px;
-    left: 260px;
 }
 
 .wbr {
-    position: absolute;
-    right: 260px;
-    top: 0;
     background-color: var(--wbr-color);
 }
 
@@ -394,9 +388,6 @@ div.col > .btn {
 }
 
 .lonely-planet {
-    position: absolute;
-    right: 260px;
-    bottom: 0px;
     background-color: var(--lonely-planet-color);
 }
 
