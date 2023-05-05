@@ -503,10 +503,6 @@ footer {
     flex-basis: calc(100% / 5);
 }
 
-.foot-column h3 {
-    padding-left: 15px;
-}
-
 .lang-box {
     height: 80px;
     align-items: flex-end;
