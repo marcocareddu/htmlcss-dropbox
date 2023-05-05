@@ -20,8 +20,8 @@
     --clear-chan-color: #ffd830;
     --txt-size-xl: 80px;
     --txt-size-md: 40px;
-    --txt-size-ms: 25px;
-    --txt-size-sm: 17px;
+    --txt-size-ms: 24px;
+    --txt-size-sm: 14px;
     --space-50px: 50px;
 }
 
@@ -59,6 +59,11 @@ h2 {
 
 h3 {
     font-size: var(--txt-size-ms);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: var(--txt-size-sm);
 }
 
 p {
@@ -97,7 +102,9 @@ button {
 }
 
 .btn {
+    font-size: var(--txt-size-sm);
     padding: 10px 15px;
+    display: block;
 }
 
 .btn.btn-blue {
@@ -224,11 +231,8 @@ div.col > .btn {
     width: calc(100% / 3);
 }
 
-.single-col * {
-    padding-top: 10px;
-}
-
 .span-border {
+    margin-left: 35px;
     border-bottom: 1px solid var(--border-color);
     padding: 25px 0px;
 }
@@ -264,16 +268,13 @@ div.col > .btn {
     border-bottom: 1px solid var(--border-color);
 }
 
-.plan-box {
-    padding: 30px;
-}
-
 .plan-type {
-    margin: 20px 0px;
+    margin: 30px 0px;
+    padding: 10px 35px;
 }
 
-.plan-type div {
-    padding: 5px 0px;
+.plan-type > p, h4 {
+    padding: 8px 0px;
 }
 
 /* ENTERPRISE SECTION */
