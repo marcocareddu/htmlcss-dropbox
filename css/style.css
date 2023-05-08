@@ -510,6 +510,18 @@ div.col-jumbo-txt > .btn {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* FAQ HOVER */
+
+.prova2 {
+    display: none;
+}
+
+/* !ATTENZIONE RIMUOVERE */
+
+.faq-box:hover .prova2 {
+    display: initial;
+}
+
 /* FOOTER */
 footer {
     color: white;
