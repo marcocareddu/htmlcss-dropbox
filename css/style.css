@@ -151,14 +151,17 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 1px 1px 5px grey;
+    line-height: 80px;
 }
-
 
 /* HOVER ON LI */
 
-li:hover a {
-    border-bottom: 2px solid black;
-    padding-bottom: 30px;
+header li:hover {
+    border-bottom: 3px solid black;
+}
+
+header li {
+    border-bottom: 3px solid transparent;
 }
 
 .menu-rx {
@@ -166,7 +169,8 @@ li:hover a {
 }
 
 .logo {
-    margin-left: 20px;
+    display: inline;
+    vertical-align: middle;
 }
 
 li a {
@@ -177,11 +181,7 @@ li a {
 .menu-rx li, .menu-lx li {
     font-size: var(--txt-size-sm);
     list-style-type: none;
-    padding-left: 40px;
-}
-
-header .btn-blue {
-    margin: 0px 20px;
+    padding: 0px 20px;
 }
 
 /* MAIN */
