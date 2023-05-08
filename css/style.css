@@ -153,6 +153,14 @@ header {
     box-shadow: 1px 1px 5px grey;
 }
 
+
+/* HOVER ON LI */
+
+li:hover a {
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
 .menu-rx {
     align-items: center;
 }
@@ -173,7 +181,7 @@ li a {
 }
 
 header .btn-blue {
-    margin-right: 15px;
+    margin: 0px 20px;
 }
 
 /* MAIN */
