@@ -23,7 +23,13 @@
     --txt-size-ms: 24px;
     --txt-size-sm: 16px;
     --txt-size-xs: 14px;
-    --space-50px: 50px;
+    --space-xxs: 5px;
+    --space-xs: 10px;
+    --space-sm: 30px;
+    --space-ms: 45px;
+    --space-md: 50px;
+    --space-lg: 60px;
+
 }
 
 /* UTILITY */
@@ -51,7 +57,7 @@
 
 h1 {
     font-size: var(--txt-size-xl);
-    padding: var(--space-50px) 0px;
+    padding: var(--space-md) 0px;
     font-weight: 800;
 }
 
@@ -72,16 +78,12 @@ p {
     font-size: var(--txt-size-sm);
 }
 
-img {
-    display: block;
-}
-
 .pad-top-bot-50 {
-    padding: var(--space-50px) 0px;
+    padding: var(--space-md) 0px;
 }
 
 .mar-top-bot-50 {
-    margin: var(--space-50px) 0px;
+    margin: var(--space-md) 0px;
 }
 
 .fa-check {
@@ -96,9 +98,8 @@ img {
     text-align: center;
 }
 
-/* !DA RIMUOVERE */
-.bgc-white {
-    background-color: #fff;
+.align-center {
+    align-items: center;
 }
 
 /* LIST */
@@ -108,10 +109,8 @@ ul li {
 
 /* BUTTONS */
 .btn {
-    text-align: center;
     font-size: var(--txt-size-sm);
-    padding: 10px 15px;
-    /* display: block; */
+    padding: var(--space-xs) 15px;
 }
 
 .btn.btn-blue {
@@ -148,8 +147,6 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 1px 1px 5px grey;
     line-height: 80px;
 }
@@ -162,10 +159,6 @@ header li:hover {
 
 header li {
     border-bottom: 3px solid transparent;
-}
-
-.menu-rx {
-    align-items: center;
 }
 
 .logo {
@@ -196,7 +189,6 @@ main {
 }
 
 .jumbo-pic {
-    display: block;
     max-width: 100%;
 }
 
@@ -207,7 +199,7 @@ main {
 
 .col-jumbo-txt a {
     display: inline-block;
-    margin: 30px 0px;
+    margin: var(--space-sm) 0px;
 }
 
 .col-jumbo-txt {
@@ -219,13 +211,12 @@ main {
 }
 
 div.col-jumbo-txt > .btn {
-    margin: 30px 0px;
-    align-self: start;
+    margin: var(--space-sm) 0px;
 }
 
 .fa-arrow-down {
-    padding-top: 45px;
-    font-size: var(--space-50px);
+    padding-top: var(--space-ms);
+    font-size: var(--space-md);
 }
 
 /* COLUMN MONTH PLAN */
@@ -237,8 +228,7 @@ div.col-jumbo-txt > .btn {
 }
 
 .col-plan {
-    justify-content: space-between;
-    column-gap: 50px;
+    column-gap: var(--space-md);
 }
 
 .col-plan .single-col {
@@ -251,18 +241,18 @@ div.col-jumbo-txt > .btn {
 }
 
 .border-div {
-    margin: 50px 35px;
+    margin: var(--space-md) 35px;
     width: 15%;
     border-bottom: 1px solid var(--border-color);
 }
 
 .plan-ul li {
     text-indent: -9px;
-    padding: 5px 49px;
+    padding: var(--space-xxs) 49px;
 }
 
 .plan-ul li:last-child {
-    padding-bottom: var(--space-50px);
+    padding-bottom: var(--space-md);
 }
 
 /* FONT AWESOME LIST ICON */
@@ -294,7 +284,6 @@ div.col-jumbo-txt > .btn {
     content: "\f00c";
 }
 
-
 /* CIRCLE */
 .circle {
     display: inline-block;
@@ -305,7 +294,7 @@ div.col-jumbo-txt > .btn {
 }
 
 .circle.circle-selected {
-    border: 5px solid var(--btn-color);
+    border: var(--space-xxs) solid var(--btn-color);
 }
 
 .circle.circle-unselected {
@@ -313,22 +302,21 @@ div.col-jumbo-txt > .btn {
 }
 
 .circle-container span:nth-of-type(2) {
-    margin-right: var(--space-50px);
+    margin-right: var(--space-md);
 }
 
 .circle-container {
-    padding-bottom: var(--space-50px);
+    padding-bottom: var(--space-md);
 }
 
 .col-title{
-    text-align: center;
-    padding: 10px 0px;
+    padding: var(--space-xs) 0px;
     border-bottom: 1px solid var(--border-color);
 }
 
 .plan-type {
-    margin: 30px 0px;
-    padding: 10px 35px;
+    margin: var(--space-sm) 0px;
+    padding: var(--space-xs) 35px;
 }
 
 .plan-type > p, h4 {
@@ -338,7 +326,7 @@ div.col-jumbo-txt > .btn {
 /* ENTERPRISE SECTION */
 .enterprise {
     height: 100%;
-    margin: var(--space-50px) 0px;
+    margin: var(--space-md) 0px;
 }
 
 .enterprise-info {
@@ -346,11 +334,11 @@ div.col-jumbo-txt > .btn {
 }
 
 .enterprise-container {
-    padding: 30px;
+    padding: var(--space-sm);
 }
 
 .enterprise-info p {
-    padding-top: 50px;
+    padding-top: var(--space-md);
 }
 
 .enterprise-btn {
@@ -363,15 +351,15 @@ div.col-jumbo-txt > .btn {
 }
 
 .col {
-    margin: var(--space-50px);
+    margin: var(--space-md);
 }
 
 .col h3, p {
-    padding: 10px 0px;
+    padding: var(--space-xs) 0px;
 }
 
 .col p {
-    margin-bottom: 30px;
+    margin-bottom: var(--space-sm);
 }
 
 
@@ -379,15 +367,14 @@ div.col-jumbo-txt > .btn {
 .business {
     flex-wrap: wrap;
     column-gap: 20px;
-    justify-content: space-between;
 } 
 
 .business-row {
-    padding: 50px 0px;
+    padding: var(--space-md) 0px;
 }
 
 .business-row h2 {
-    padding: 50px 0px;
+    padding: var(--space-md) 0px;
 }
 
 .col-business {
@@ -409,16 +396,12 @@ div.col-jumbo-txt > .btn {
 .block {
     height: calc(100vw / 3);
     width: calc(100vw / 3);
-    display: flex;
     flex-wrap: wrap;
 }
 
 .box {
     width: 50%;
     height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 15px solid rgba(0,0,0,0);
 }
 
@@ -427,13 +410,13 @@ div.col-jumbo-txt > .btn {
 }
 
 .center-blocks {
-    padding: var(--space-50px);
+    padding: var(--space-md);
     flex-direction: column;
     align-items: flex-start;
 }
 
 .border-designit {
-    margin: 30px 0px;
+    margin: var(--space-sm) 0px;
     width: 25%;
     border-bottom: 1px solid var(--border-color);
 }
@@ -482,19 +465,17 @@ div.col-jumbo-txt > .btn {
 
 /* COMPANY SECTION */
 .company {
-    align-items: center;
     height: 300px;
     background-color: var(--bgc-main-color);
 }
 
 .company-box h2 {
-    padding-right: 60px;
+    padding-right: var(--space-lg);
     flex-basis: 70%;
     color: var(--asu-color);
 }
 
 .company-box a {
-    text-align: center;
     align-self: flex-start;
     flex-basis: 30%;
 }
@@ -504,14 +485,11 @@ div.col-jumbo-txt > .btn {
 }
 
 .questions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-top: 1px solid var(--border-color);
 }
 
 .faq-box h4 {
-    padding: 45px 0px;
+    padding: var(--space-ms) 0px;
 }
 
 .faq-box div:last-child {
@@ -548,7 +526,7 @@ footer {
     color: white;
     height: 400px;
     background-color: black;
-    padding-top: 50px;
+    padding-top: var(--space-md);
 }
 
 .foot-column {
@@ -558,7 +536,7 @@ footer {
 }
 
 .foot-column li:last-child {
-    padding-bottom: 30px;
+    padding-bottom: var(--space-sm);
 }
 
 .lang-box {
@@ -569,10 +547,10 @@ footer {
 .lang-selection {
     align-items: center;
     color: var(--border-color);
-    padding-top: 40px;
+    padding-top: var(--space-ms);
     border-top: 1px solid currentColor;
 }
 
 .lang-selection * {
-    padding-right: 5px;
+    padding-right: var(--space-xxs);
 }
