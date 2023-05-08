@@ -511,15 +511,28 @@ div.col-jumbo-txt > .btn {
 }
 
 /* FAQ HOVER */
-
-.prova2 {
+.div-answer {
     display: none;
 }
 
-/* !ATTENZIONE RIMUOVERE */
+.fa-angle-up {
+    display: none;
+}
 
-.faq-box:hover .prova2 {
+.answer {
+    padding: 20px 0px;
+}
+
+.faq-hover:hover .div-answer {
     display: initial;
+}
+
+.faq-hover:hover .fa-angle-up {
+    display: initial;
+}
+
+.faq-hover:hover .fa-angle-down {
+    display: none;
 }
 
 /* FOOTER */
